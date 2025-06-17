@@ -12,7 +12,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1201,
         "fields": {
-            "priority": 2,
+            "priority": 3,
             "description": "Well, Gunsmoke, I don't know why or how you convinced PearPerson to join your ticket, but I suppose it's your choice. Now it's your problem to introduce him to the country. We've got three locations you can do it at with a theme for each one. Choose one of them.",
             "likelihood": 1
         }
@@ -21,7 +21,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1203,
         "fields": {
-            "priority": 3,
+            "priority": 4,
             "description": "With the basics of this campaign set in stone, we can now focus on our most pressing issue - <b> the Republicans </b>. Specifically, JD Vance. Trump coined him as his successor, and he's sure as hell going to try his hardest to claim that mantle. You need to set-up a foundational critique of Vance that will determine how your campaign approaches him going forward. Whether it be about his character, policies, or rhetoric is up to you. \n",
             "likelihood": 1
         }
@@ -30,7 +30,7 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 1204,
         "fields": {
-            "priority": 4,
+            "priority": 19,
             "description": "<b> Debate Time. </b> <p> In just a few moments, you will be standing across from JD Vance, and in-front of tens of millions of Americans. We've had a lot of discussion about your strategy, but it's ultimately up to you. Go out there and make Democrats everywhere proud.",
             "likelihood": 1
         }
@@ -39,8 +39,143 @@ campaignTrail_temp.questions_json = [
         "model": "campaign_trail.question",
         "pk": 41431,
         "fields": {
-            "priority": 5,
+            "priority": 20,
             "description": "This is it. The last stop of the campaign before you head home and watch the returns come in. It feels so ethereal to be here - the end of a journey that has enveloped every waking second of you life for the past 3 months. Where would you like to make your last impression to America, Gunsmoke?",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41448,
+        "fields": {
+            "priority": 2,
+            "description": "VP SELECTION",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41449,
+        "fields": {
+            "priority": 5,
+            "description": "LGBT RHETORIC",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41450,
+        "fields": {
+            "priority": 6,
+            "description": "ECONOMIC PLATFORM",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41451,
+        "fields": {
+            "priority": 7,
+            "description": "GAZA",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41452,
+        "fields": {
+            "priority": 8,
+            "description": "RUSSIA UKRAINE",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41453,
+        "fields": {
+            "priority": 9,
+            "description": "RALLY",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41454,
+        "fields": {
+            "priority": 10,
+            "description": "SOCIAL MEDIA CAMPAIGN",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41455,
+        "fields": {
+            "priority": 11,
+            "description": "HECKLERS",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41456,
+        "fields": {
+            "priority": 12,
+            "description": "ESTABLISHMENT",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41457,
+        "fields": {
+            "priority": 13,
+            "description": "FAR-LEFT",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41458,
+        "fields": {
+            "priority": 14,
+            "description": "IMMIGRATION",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41459,
+        "fields": {
+            "priority": 15,
+            "description": "WAGES AND INFLATION",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41460,
+        "fields": {
+            "priority": 16,
+            "description": "VANCE RHETORIC",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41461,
+        "fields": {
+            "priority": 17,
+            "description": "GAY PEOPLE",
+            "likelihood": 1
+        }
+    },
+    {
+        "model": "campaign_trail.question",
+        "pk": 41462,
+        "fields": {
+            "priority": 18,
+            "description": "DELTARUNE",
             "likelihood": 1
         }
     }
@@ -5003,7 +5138,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 6004,
             "candidate": 300,
             "affected_candidate": 300,
-            "global_multiplier": 0.0015
+            "global_multiplier": 0.085
         }
     },
     {
@@ -5013,7 +5148,7 @@ campaignTrail_temp.answer_score_global_json = [
             "answer": 41424,
             "candidate": 300,
             "affected_candidate": 300,
-            "global_multiplier": -0.005
+            "global_multiplier": -0.05
         }
     },
     {
