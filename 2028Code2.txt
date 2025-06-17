@@ -1,3 +1,21 @@
+
+campaignTrail_temp.cyoa = true;
+
+function getQuestionNumberFromPk(pk) {
+    return campaignTrail_temp.questions_json.map(q=>q.pk).indexOf(pk)-1;
+}
+
+cyoAdventure = function (a) {
+    ans = campaignTrail_temp.player_answers[campaignTrail_temp.player_answers.length-1];
+
+    if (ans == 6000) {
+        campaignTrail_temp.question_number = getQuestionNumberFromPk(1200);
+    }
+    else {
+        return false;
+    }
+}
+
 campaignTrail_temp.questions_json = [
     {
         "model": "campaign_trail.question",
@@ -897,21 +915,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 110,
         "fields": {
-            "name": "Overall",
+            "name": "Boykissing",
             "description": 0,
-            "stance_1": "Very Conservative",
+            "stance_1": "Anti-Boykisser",
             "stance_desc_1": 0,
-            "stance_2": "Conservative",
+            "stance_2": "Adam and Eve, not...",
             "stance_desc_2": 0,
-            "stance_3": "Center-Right",
+            "stance_3": "Homophobic",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Lips = Lips",
             "stance_desc_4": 0,
-            "stance_5": "Center-Left",
+            "stance_5": "$20 = $20",
             "stance_desc_5": 0,
-            "stance_6": "Progressive",
+            "stance_6": "Oooh I like kissing boys",
             "stance_desc_6": 0,
-            "stance_7": "Very Progressive",
+            "stance_7": "I kiss boys every morning",
             "stance_desc_7": 0,
             "election": 21
         }
@@ -920,21 +938,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 111,
         "fields": {
-            "name": "Economics",
+            "name": "Economic Depression",
             "description": 0,
-            "stance_1": "Very Conservative",
+            "stance_1": "Gaslighted",
             "stance_desc_1": 0,
-            "stance_2": "Conservative",
+            "stance_2": "Pretends",
             "stance_desc_2": 0,
-            "stance_3": "Center-Right",
+            "stance_3": "Acknowledges",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Struggles",
             "stance_desc_4": 0,
-            "stance_5": "Center-Left",
+            "stance_5": "Struggles",
             "stance_desc_5": 0,
-            "stance_6": "Progressive",
+            "stance_6": "Despondent",
             "stance_desc_6": 0,
-            "stance_7": "Very Progressive",
+            "stance_7": "Bankrupt",
             "stance_desc_7": 0,
             "election": 21
         }
@@ -943,21 +961,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 112,
         "fields": {
-            "name": "Health Care",
+            "name": "LGBT Rights",
             "description": 0,
-            "stance_1": "Very Conservative",
+            "stance_1": "Guns Have More",
             "stance_desc_1": 0,
-            "stance_2": "Conservative",
+            "stance_2": "Expressly Anti",
             "stance_desc_2": 0,
-            "stance_3": "Center-Right",
+            "stance_3": "We Just Don't Care ",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Lip Service",
             "stance_desc_4": 0,
-            "stance_5": "Center-Left",
+            "stance_5": "We Do Care",
             "stance_desc_5": 0,
-            "stance_6": "Progressive",
+            "stance_6": "Institutional Rights",
             "stance_desc_6": 0,
-            "stance_7": "Very Progressive",
+            "stance_7": "Trans Rights are Human Rights",
             "stance_desc_7": 0,
             "election": 21
         }
@@ -968,19 +986,19 @@ campaignTrail_temp.issues_json = [
         "fields": {
             "name": "Foreign Policy",
             "description": 0,
-            "stance_1": "Very Conservative",
+            "stance_1": "Whatever Trump Says",
             "stance_desc_1": 0,
-            "stance_2": "Conservative",
+            "stance_2": "It's Fine Right Now",
             "stance_desc_2": 0,
-            "stance_3": "Center-Right",
+            "stance_3": "Lighten The Tariffs, Please?",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Stop Threatening Our Allies, Please",
             "stance_desc_4": 0,
-            "stance_5": "Center-Left",
+            "stance_5": "I'm just saying - chill",
             "stance_desc_5": 0,
-            "stance_6": "Progressive",
+            "stance_6": "Israel doesn't need that money",
             "stance_desc_6": 0,
-            "stance_7": "Very Progressive",
+            "stance_7": "CEASE-FIRE NOW",
             "stance_desc_7": 0,
             "election": 21
         }
@@ -989,21 +1007,21 @@ campaignTrail_temp.issues_json = [
         "model": "campaign_trail.issue",
         "pk": 114,
         "fields": {
-            "name": "Social Issues",
+            "name": "Immigration Policies",
             "description": 0,
-            "stance_1": "Very Conservative",
+            "stance_1": "Deport All Of Them",
             "stance_desc_1": 0,
-            "stance_2": "Conservative",
+            "stance_2": "Deport The Illegals",
             "stance_desc_2": 0,
-            "stance_3": "Center-Right",
+            "stance_3": "Deport The Criminals",
             "stance_desc_3": 0,
-            "stance_4": "Moderate",
+            "stance_4": "Deport The Undocumented",
             "stance_desc_4": 0,
-            "stance_5": "Center-Left",
+            "stance_5": "Deport The Murderers",
             "stance_desc_5": 0,
-            "stance_6": "Progressive",
+            "stance_6": "Deport No One",
             "stance_desc_6": 0,
-            "stance_7": "Very Progressive",
+            "stance_7": "Deport The Orange",
             "stance_desc_7": 0,
             "election": 21
         }
@@ -1017,7 +1035,7 @@ campaignTrail_temp.state_issue_score_json = [
         "fields": {
             "state": 1100,
             "issue": 110,
-            "state_issue_score": -0.407,
+            "state_issue_score": -0.707,
             "weight": 4
         }
     },
@@ -13085,24 +13103,30 @@ endingPicker = (out, totv, aa, quickstats) => {
 
     if(quickstats[0] == 538) {
         setImage("https://i.imgur.com/SS3rpKB_d.webp?maxwidth=760&fidelity=grand");
-        return `The Boykissing Act of 2030 enacted mandatory boykissing sessions in all 50 states and territories of the United States of America. The act was spearheaded by President Exeon as a part of their "Boy kissing" initiative that saw massive support from the populace in their 2028 Campaign. 
+        return `<h3>The Boykissing Act of 2030 </h3> <p> Enacted mandatory boykissing sessions in all 50 states and territories of the United States of America. The act was spearheaded by President Exeon as a part of their "Boy kissing" initiative that saw massive support from the populace in their 2028 Campaign. </p>
 
-<p> The act requires that every first Monday of every month, all American citizens are required to go out and kiss at least 2 boys. While some scholars have argued that the act is unconstitutional, the Supreme Court has repeatedly struck down these arguments in cases such as <i> DeSantis v. Ethereal Shroom </i>. Governor Abbott pledged to repeal the law in his 2032 campaign, which played a large role in his landslide defeat.`;
+<p> The act requires that every first Monday of every month, all American citizens are required to go out and kiss at least 2 boys. While some scholars have argued that the act is unconstitutional, the Supreme Court has repeatedly struck down these arguments in cases such as <i> DeSantis v. Ethereal Shroom </i>. Governor Abbott pledged to repeal the law in his 2032 campaign, which played a large role in his landslide defeat. <p>`;
     }
     if(quickstats[0] > 269) {
-        setImage("");
-        return `<h3>"We can now project that..." </h3><p> "Gunsmokexeon has been elected as the 48th President of the United States. This is a monumental occasion in American History, as Gunsmoke is the first ever LGBT+ person to ever be elected to the White House. In addition, it stands as a stunning rebuke of the Trump administration's policies over the last 4 years, primarily its conservative economic and social policies."`;
+        setImage("https://i.imgur.com/rknuxcU.gif");
+        return `<h3>"We can now project that..." </h3><p> "<b> Gunsmokexeon </b> has been elected as the 48th President of the United States. This is a monumental occasion in American History, as Gunsmoke is the first ever LGBT+ person to ever be elected to the White House. In addition, it stands as a stunning rebuke of the Trump administration's policies over the last 4 years, primarily its conservative economic and social policies. "<p> "As for the GOP, they are assuredly deprecated by this defeat. After 4 years, it seems that the country has finally chosen to move on from MAGA ideology. This leaves 2032 as a potential pathway for the party to choose a new ideology - or double down on what has worked twice before."`;
     }
     if(quickstats[0] < 270) {
-        setImage("");
-        return `<h3>"We can now project that..." </h3><p> "James David Vance has been elected as the 48th President of the United States. This is a historic moment in American History, as Vance will be the first ever Millennial President, potentially marking a shifting towards a younger generation in the American political system."`;
+        setImage("https://i.imgur.com/k7VSOhG.png");
+        return `<h3>"We can now project that..." </h3><p> "<b> James David Vance </b> has been elected as the 48th President of the United States. This is a historic moment in American History, as Vance will be the first ever Millennial President, potentially marking a shifting towards a younger generation in the American political system." <p> "As for the Democrats, they are assuredly going to lean more to the right in their next go for the White House, with some high-ranking officials already signaling their support for rolling back on the parties left-wing social stances and pivoting towards a more populistic rhetoric." `;
     }
 }
 
 
 campaignTrail_temp.jet_data = [{
-    "cyoa_enabled": false,
-    "cyoa_data": {},
+    "cyoa_enabled": true,
+    "cyoa_data": {
+        "1750129459743": {
+            "answer": 6000,
+            "question": 1200,
+            "id": 1750129459743
+        }
+    },
     "endings_enabled": true,
     "ending_data": {
         "1750092323804": {
@@ -13111,7 +13135,7 @@ campaignTrail_temp.jet_data = [{
             "operator": "==",
             "value": 0,
             "endingImage": "https://i.imgur.com/SS3rpKB_d.webp?maxwidth=760&fidelity=grand",
-            "endingText": "The Boykissing Act of 2030 enacted mandatory boykissing sessions in all 50 states and territories of the United States of America. The act was spearheaded by President Exeon as a part of their \"Boy kissing\" initiative that saw massive support from the populace in their 2028 Campaign. \n\n<p> The act requires that every first Monday of every month, all American citizens are required to go out and kiss at least 2 boys. While some scholars have argued that the act is unconstitutional, the Supreme Court has repeatedly struck down these arguments in cases such as <i> DeSantis v. Ethereal Shroom </i>. Governor Abbott pledged to repeal the law in his 2032 campaign, which played a large role in his landslide defeat.",
+            "endingText": "<h3>The Boykissing Act of 2030 </h3> <p> Enacted mandatory boykissing sessions in all 50 states and territories of the United States of America. The act was spearheaded by President Exeon as a part of their \"Boy kissing\" initiative that saw massive support from the populace in their 2028 Campaign. </p>\n\n<p> The act requires that every first Monday of every month, all American citizens are required to go out and kiss at least 2 boys. While some scholars have argued that the act is unconstitutional, the Supreme Court has repeatedly struck down these arguments in cases such as <i> DeSantis v. Ethereal Shroom </i>. Governor Abbott pledged to repeal the law in his 2032 campaign, which played a large role in his landslide defeat. <p>",
             "amount": "538"
         },
         "1750110729187": {
@@ -13119,8 +13143,8 @@ campaignTrail_temp.jet_data = [{
             "variable": 0,
             "operator": ">",
             "value": 0,
-            "endingImage": "",
-            "endingText": "<h3>\"We can now project that...\" </h3><p> \"Gunsmokexeon has been elected as the 48th President of the United States. This is a monumental occasion in American History, as Gunsmoke is the first ever LGBT+ person to ever be elected to the White House. In addition, it stands as a stunning rebuke of the Trump administration's policies over the last 4 years, primarily its conservative economic and social policies.\"",
+            "endingImage": "https://i.imgur.com/rknuxcU.gif",
+            "endingText": "<h3>\"We can now project that...\" </h3><p> \"<b> Gunsmokexeon </b> has been elected as the 48th President of the United States. This is a monumental occasion in American History, as Gunsmoke is the first ever LGBT+ person to ever be elected to the White House. In addition, it stands as a stunning rebuke of the Trump administration's policies over the last 4 years, primarily its conservative economic and social policies. \"<p> \"As for the GOP, they are assuredly deprecated by this defeat. After 4 years, it seems that the country has finally chosen to move on from MAGA ideology. This leaves 2032 as a potential pathway for the party to choose a new ideology - or double down on what has worked twice before.\"",
             "amount": "269"
         },
         "1750110780735": {
@@ -13128,8 +13152,8 @@ campaignTrail_temp.jet_data = [{
             "variable": 0,
             "operator": "<",
             "value": 0,
-            "endingImage": "",
-            "endingText": "<h3>\"We can now project that...\" </h3><p> \"James David Vance has been elected as the 48th President of the United States. This is a historic moment in American History, as Vance will be the first ever Millennial President, potentially marking a shifting towards a younger generation in the American political system.\"",
+            "endingImage": "https://i.imgur.com/k7VSOhG.png",
+            "endingText": "<h3>\"We can now project that...\" </h3><p> \"<b> James David Vance </b> has been elected as the 48th President of the United States. This is a historic moment in American History, as Vance will be the first ever Millennial President, potentially marking a shifting towards a younger generation in the American political system.\" <p> \"As for the Democrats, they are assuredly going to lean more to the right in their next go for the White House, with some high-ranking officials already signaling their support for rolling back on the parties left-wing social stances and pivoting towards a more populistic rhetoric.\" ",
             "amount": "270"
         }
     },
